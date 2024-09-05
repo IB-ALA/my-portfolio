@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index-responsive.css">
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <div class="logo">John Doe</div>
+    <div class="">
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon js-hamburger-icon js-hamburger-menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links js-menu-links">
+        <li><a href="#about" class="js-hamburger-menu-toggler">about</a></li>
+        <li><a href="#experience" class="js-hamburger-menu-toggler">experience</a></li>
+        <li><a href="#projects" class="js-hamburger-menu-toggler">projects</a></li>
+        <li><a href="#contact" class="js-hamburger-menu-toggler">contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section-pic-container">
+      <img src="./asserts/portfolio-home-page/profile-pic.png" alt="John Doe profile picture">
+    </div>
+    <div class="section-text">
+      <p>Hello I'm</p>
+      <p>John Doe</p>
+      <p>Full-Stack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-1" onclick="window.open('./asserts/portfolio-home-page/resume-example.pdf')">Download CV</button>
+        <button class="btn btn-2" onclick="location.href = './#contact'">Contact Info</button>
+      </div>
+      <div class="social-contact">
+        <a href="index.html">
+          <img class="icon" src="./asserts/portfolio-home-page/linkedin.png" alt="My linkedin profile">
+        </a>
+        <a href="index.html">
+          <img class="icon" src="./asserts/portfolio-home-page/github.png" alt="My linkedin profile">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>

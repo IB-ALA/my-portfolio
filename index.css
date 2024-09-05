@@ -1,0 +1,247 @@
+/* General */
+
+/* 
+Go to google fonts
+Search for Poppins
+Add 'select light 300', 'select regular 400', 'select medium 500', 'select semibold 600'
+Copy the import link and add it to the css file
+*/
+/* @import url(''); */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Transition */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/*  nav */
+
+nav, 
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  /* border: 1px solid #000; */
+  text-transform: capitalize;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+.nav-links a {
+  position: relative;
+}
+a:hover {
+  color: gray;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: gray;
+  transition: .3s ease-in-out;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-size: 2rem;
+}
+.logo:hover {
+  cursor: default;
+}
+
+/* Hamburger Menu */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  /* border: 1px solid #000; */
+}
+.hamburger-icon.show span:first-child {
+  transform: rotate(45deg) translate(11px, 5px);
+}
+.hamburger-icon.show span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.show span:last-child {
+  transform: rotate(-45deg) translate(11px, -5px);
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+.menu-links li {
+  list-style: none;
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50px);
+  /* right: 0; */
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  border: 1px solid hsl(0, 0%, 80%);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.menu-links.show{
+  opacity: 1;
+  max-height: 300px;
+}
+.menu-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  /* border: 1px solid #000; */
+  border-radius: 7px;
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links a:hover {
+  color: gray;
+  background-color: hsl(0, 0%, 97%);
+}
+
+/* Profile */
+section {
+  padding: 4vh;
+  height: 94vh;
+  box-sizing: border-box;
+  min-height: fit-content;
+  margin: 0 10rem;
+}
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  /* height: 80vh; */
+}
+
+.section-pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section-text p:nth-child(3) {
+  font-size: 1.75rem;
+}
+.section-text p:nth-child(2) {
+  color: black;
+  font-size: 3rem;
+}
+
+/* btns */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  font-weight: 600px;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-2,
+.btn-1 {
+  border: .1rem solid rgb(53, 53, 53);
+  cursor: pointer;
+}
+.btn-2,
+.btn-1:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.btn-2:hover {
+  background: rgb(0, 0, 0);
+}
+.btn-1 {
+  background: none;
+}
+.btn-1:hover {
+  background-color: rgb(255, 255, 255) 0.1rem solid;
+}
+
+
+
+.social-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
