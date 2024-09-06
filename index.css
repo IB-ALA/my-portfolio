@@ -6,7 +6,7 @@ Search for Poppins
 Add 'select light 300', 'select regular 400', 'select medium 500', 'select semibold 600'
 Copy the import link and add it to the css file
 */
-/* @import url(''); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
 
 
 * {
@@ -16,6 +16,7 @@ Copy the import link and add it to the css file
 
 body {
   font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 html {
@@ -165,11 +166,13 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
   margin: 0 10rem;
+  /* border: 1px solid #000; */
 }
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  /* margin-bottom: 2rem; */
   /* height: 80vh; */
 }
 
@@ -185,7 +188,9 @@ section {
   text-align: center;
 }
 
-.section-text p {
+.section-text p,
+#about p  {
+  text-transform: capitalize;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1rem;
@@ -193,7 +198,8 @@ section {
 .section-text p:nth-child(3) {
   font-size: 1.75rem;
 }
-.section-text p:nth-child(2) {
+.section-text p:nth-child(2),
+#about p:nth-child(2) {
   color: black;
   font-size: 3rem;
 }
@@ -205,7 +211,7 @@ section {
   gap: 1rem;
 }
 .btn {
-  font-weight: 600px;
+  font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
@@ -244,4 +250,60 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+/* about */
+#about {
+  position: relative;
+  /* height: fit-content; */
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+  /* height: fit-content; */
+  /* flex-wrap: wrap; */
+}
+
+.section-pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-details-container,
+.about-containers {
+  display: flex;
+}
+
+.about-containers {
+  gap: 2rem;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  flex: 1;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(53, 53, 53);
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
