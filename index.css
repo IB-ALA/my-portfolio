@@ -277,6 +277,10 @@ section>p:nth-child(2) {
   /* flex-wrap: wrap; */
 }
 
+.text-container {
+  color: rgb(85, 85, 85);
+}
+
 .section-pic-container {
   height: 400px;
   width: 400px;
@@ -323,7 +327,7 @@ section>p:nth-child(2) {
 }
 
 /* experience */
-.experince-details-container,
+.experience-details-container,
 .projects-details-container {
   display: flex;
   justify-content: center;
