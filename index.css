@@ -86,6 +86,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  text-transform: none;
 }
 .logo:hover {
   cursor: default;
@@ -116,7 +117,7 @@ a:hover {
   opacity: 0;
 }
 .hamburger-icon.show span:last-child {
-  transform: rotate(-45deg) translate(11px, -5px);
+  transform: rotate(-45deg) translate(9px, -5px);
 }
 
 .hamburger-icon span {
@@ -131,7 +132,7 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  transform: translateX(-50px);
+  transform: translateX(-40%);
   /* right: 0; */
   background-color: white;
   width: fit-content;
@@ -204,6 +205,10 @@ section p {
 section>p:first-child {
   text-align: center;
 }
+.section-text>p:nth-child(2) {
+  font-size: 2.5rem !important;
+  /* color: hsl(0, 0%, 20%) !important; */
+}
 .section-text>p:nth-child(2),
 section>p:nth-child(2) {
   color: black;
@@ -216,6 +221,7 @@ section>p:nth-child(2) {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 .btn {
@@ -364,6 +370,14 @@ article .icon {
   text-transform: capitalize;
   text-align: center;
 }
+.projects-subtitle {
+  color: black;
+  margin: 1rem 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+}
 
 /* projects */
 #projects {
@@ -377,13 +391,11 @@ article .icon {
 
 .project-image {
   border-radius: 2rem;
+  max-height: 360px;
+  max-width: 360px;
   width: 90%;
   height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
+  box-shadow: 0px 5px 10px 5px hsl(0, 0%, 70%);
 }
 
 .project-btn {
@@ -395,9 +407,11 @@ article .icon {
   flex-wrap: wrap;
 }
 
-/* .project-content {
-  background-color: tomato;
-} */
+.project-content {
+  /* background-color: tomato; */
+  flex-direction: column;
+  align-items: center;
+}
 
 /* contact */
 #contact {
@@ -425,6 +439,10 @@ article .icon {
   align-items: center;
   gap: 0.5rem;
   margin: 1rem;
+}
+
+.contact-info-container:nth-child(2) {
+  margin-left: 1rem;
 }
 
 .contact-info-container a {
