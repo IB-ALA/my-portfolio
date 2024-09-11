@@ -1,0 +1,906 @@
+/* .recipe-name-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-name-edit-input {
+  width: 100px;
+  width: 0em;
+  width: fit-content;
+  caret-color: green;
+  height: 40px;
+  font-size: 30px;
+  padding: 0;
+}
+.recipe-name-edit-done-button,
+.recipe-name-edit-cancel-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.recipe-name-edit-done-button {
+
+} */
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  /* border: 4px blue solid; */
+  padding: 0px 15%;
+
+}
+p {
+  margin: 0;
+}
+.for-borders {
+  border-left: 3px solid rgba(0, 0, 0, 0.211); 
+  border-right: 3px solid rgba(0, 0, 0, 0.211); 
+  padding: 170px 4.5% 0 4.5%;
+  height: fit-content;
+}
+
+
+.for-fixed-property {
+  /* border: 3px solid red;  */
+  position: fixed; 
+  top: 0; 
+  background-color: white;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66%;
+  margin: 0;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  transition: 0.15s;
+}
+
+/* FOR ALL FLEX AND CENTERING */
+button,
+header,
+nav,
+.recipe-input-container,
+.recipe-name-edit-input-container,
+.edit-button-section,
+.cancel-selectall-button-holder,
+.main-delete-message-holder,
+.main-delete-message-container,
+.main-delete-message-buttons-container,
+.recipe-name-section,
+.recipe-name-container,
+.checkbox-add-button-container,
+.steps-ingredients-section,
+.steps-input-container-holder,
+.steps-input-container,
+.steps-container,
+.steps-li-holder,
+.ingredients-li-holder,
+.ingredients-section-header, 
+.steps-section-header,
+.delete-steps-message-holder,
+.delete-steps-message,
+.delete-steps-button-container,
+.ingredients-container,
+.delete-ingredients-message-holder,
+.delete-ingredients-message,
+.ingredients-input-container-holder,
+.ingredients-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+header {
+  /* border: 3px solid green; */
+  padding: 0;
+}
+
+h1 {
+  /* border: 2px red solid; */
+  font-size: 40px;
+  font-style: normal;
+  font-family: cursive;
+  margin: 10px 0;
+}
+
+nav {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.13);
+  /* border: 3px solid green; */
+  justify-content: space-between;
+  padding: 10px 0 25px 0;
+}
+.add-recipe-button, 
+.edit-recipe-button {
+  font-family: arial;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0; 
+}
+.add-recipe-button {
+  font-family: arial;
+  font-size: 45px;
+  background-color: blue;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0;
+}
+.edit-recipe-button {
+  font-size: 27px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.edit-recipe-button.show-delete-svg {
+  background-color: hsl(0, 0%, 93%);
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+  /* background-color: transparent; */
+  /* border: 2px solid hsl(0, 0%, 80%); */
+}
+.edit-recipe-button.show-delete-svg:hover {
+  background-color: hsl(0, 0%, 88%);
+}
+.edit-recipe-button svg {
+  width: 27px;
+  /* height: 27px; */
+  fill: hsl(0, 110%, 35%);
+}
+
+.recipe-input-container {
+  /* border: red solid 2px;  */
+  width: 90%; 
+  position: relative; 
+}
+.recipe-input {
+  height: 18px;
+  width: 100%;
+  padding: 10px 39px 10px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(107, 107, 107);
+  color: rgb(87, 87, 87);
+}
+.recipe-input::placeholder {
+  font-size: 17px;
+}
+
+
+/* this code here */
+.recipe-input-add-button {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  position: absolute;
+  right: 7px;
+  background-color: white; 
+  color: rgb(48, 48, 48);
+  border-radius: 15px;
+}
+.recipe-input-add-button:hover {
+  background-color: rgb(43, 43, 182);
+  color: white;
+}
+.recipe-input-cancel-button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  right: 7px;
+  background-color: white; 
+  color: rgb(184, 0, 0);
+  font-weight: bold;
+  font-family: arial;
+  border-radius: 15px;
+}
+.recipe-input-cancel-button:hover {
+  background-color:  rgb(184, 0, 0);
+  color: white;
+}
+
+
+.recipe-name-edit-input-container {
+  /* border: red solid 2px;  */
+  /* width: 90%; */
+  position: relative; 
+}
+
+.recipe-name-edit-input {
+  height: 18px;
+  width: 200px;
+  padding: 10px 36px 10px 5px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 2px solid rgb(107, 107, 107);
+  color: rgb(87, 87, 87);
+}
+
+.recipe-name-edit-cancel-button {
+  right: 51px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+  background-color: white; 
+  color: rgb(184, 0, 0);
+  font-weight: bold;
+  font-family: arial;
+  border-radius: 3px;
+}
+.recipe-name-edit-cancel-button:hover {
+  background-color:  rgb(184, 0, 0);
+  color: white;
+} 
+.recipe-name-edit-done-button {
+  width: 39px;
+  height: 39px;
+  font-size: 33px;
+  /* position: absolute; */
+  background-color: white; 
+  color: rgb(48, 48, 48);
+  border-radius: 5px;
+  margin-left: 7px;
+}
+.recipe-name-edit-done-button:hover {
+  background-color: rgba(221, 221, 221, 0.233);
+}
+/* ends here */
+
+
+.edit-button-section {
+  position: relative;
+  /* border: 2px solid red;  */
+}
+.cancel-selectall-button-holder {
+  position: absolute;
+  /* border: 3px solid blue; */
+  right: 55px;
+}
+.cancel-button {
+  background-color: transparent;
+  font-family: arial;
+  font-size: 17px;
+  margin-right: 10px;
+  color: rgb(226, 0, 0);
+  border-radius: 5px;
+  width: 80px;
+  height: 35px;
+  transition: 0.1s;
+}
+
+.select-all-button {
+  width: fit-content;
+  text-wrap: nowrap;
+  padding: 0 12px;
+  height: 35px;
+  background-color: transparent;
+  font-family: arial;
+  font-size: 17px;
+  border-radius: 5px;
+  transition: 0.15s;
+}
+.cancel-button:hover,
+.select-all-button:hover {
+  background-color: rgba(233, 233, 233, 0.233);
+}
+.cancel-button:active,
+.select-all-button:active {
+  background-color: rgba(233, 233, 233, 0.596);
+}
+
+.overlay {
+  margin: 0;
+}
+.main-delete-message-holder {
+  position: fixed; 
+  inset: 0;
+  flex-direction: column; 
+  z-index: 100; 
+  backdrop-filter: blur(3px);
+}
+.main-delete-message-container {
+  flex-direction: column; 
+  /* border: 3px solid black;  */
+  padding: 20px 30px; 
+  border-radius: 5px; 
+  backdrop-filter: blur(50px);
+}
+.main-delete-message-text {
+  font-size: 20px; 
+  margin-bottom: 17px; 
+  font-family: arial;
+}
+.main-delete-message-buttons-container {
+  justify-content: space-around; 
+  width: 200px;
+}
+.main-delete-message-buttons-container button{
+  width: 70px; 
+  height: 40px; 
+  background-color: rgba(151, 151, 151, 0.267); 
+  border-radius: 3px; 
+  font-size: 18px;
+}
+
+
+main {
+  margin-top: -12px;
+  /* border: 3px solid green;  */
+  margin-bottom: 10px;
+}
+.each-recipe {
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+.each-recipe:not(:last-child) {
+  border-bottom: 2px rgb(99, 99, 99) dashed;
+}
+
+.recipe-list {
+  border: 3px black solid;
+  padding: 10px 20px;
+}
+
+/* .each-recipe {
+  border: 4px blue solid;
+} */
+/* article {
+  border: 3px yellow solid;
+  display: flex;
+  flex-direction: column;
+} */
+/* section {
+  border: 2px red solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.recipe-name-section {
+  padding: 0 5px 0 0;
+  /* border: 2px red solid; */
+  justify-content: space-between;
+}
+.recipe-name-container {
+  position: relative;
+  /* border: 3px solid red; */
+  margin: 0;
+  padding: 5px;
+}
+.recipe-name {
+  margin: 0;
+  font-size: 30px;
+  /* border: 4px solid rgb(255, 123, 0); */
+  font-family: arial;
+  cursor: pointer;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 20px;
+  position: absolute;
+  left: -20px;
+}
+.add-button-container {
+  /* border: 1px solid rgb(255, 123, 0); */
+  padding: 1px;
+  position: relative;
+}
+.checkbox-add-button-container {
+  /* border: 2px blue solid;  */
+  margin: 0; 
+}
+.each-recipe-add-button {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgb(156, 156, 156);
+  transition: 0.15s;
+}
+.each-recipe-add-button:hover {
+  background-color: rgba(228, 228, 228, 0.226);
+}
+.each-recipe-add-button:active {
+  background-color: rgba(228, 228, 228, 0.548);
+}
+.delete-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: rgba(231, 231, 231, 0.685);
+  width: 40px;
+  height: 26.5px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.delete-checkbox::before {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 14px;
+  transition: left 0.2s ease-in-out;
+}
+.delete-checkbox:checked {
+  background-color: blue;
+}
+.delete-checkbox:checked::before {
+  left: 27px;
+}
+
+
+.tool-tip {
+  background-color: white; 
+  border: 2px solid rgba(0, 0, 0, 0.277); 
+  position: absolute; 
+  top: 28px; 
+  left: -120px; 
+  font-size: 14px; 
+  font-family: arial;
+  border-radius: 20px 0 20px 20px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.164);
+}
+.tool-tip-add-step {
+  text-align: center;
+  margin: 0; 
+  border-bottom: 1px solid rgba(214, 214, 214, 0.644); 
+  padding: 10px 20px;
+  border-radius: 20px 0 0 0;
+}
+.tool-tip-add-step:hover,
+.tool-tip-add-ingredient:hover {
+  background-color: rgba(214, 214, 214, 0.253);
+}
+.tool-tip-add-ingredient {
+  text-align: center;
+  margin: 0; 
+  padding: 10px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+
+.steps-ingredients-section {
+  border: 2px rgba(0, 0, 0, 0.277) solid;
+  justify-content: space-between;
+  padding: 0px 10px 10px 0;
+  margin: 10px 0 0px 0;
+  border-radius: 10px;
+  /* border-top: 1px black solid; */
+}
+.steps-input-container-holder {
+  width: 100%; 
+  /* border: 2px solid green; */
+}
+.steps-input-container {
+  /* border: 2px solid blue; */
+  width: 90%;
+  padding-top: 10px;
+  /* background-color: aqua; */
+  border-top: rgba(0, 0, 0, 0.459) solid 1px;
+}
+.steps-input,
+.steps-edit-input {
+  width: 70%;
+  padding: 8px 35px 8px 12px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: 2px solid rgb(107, 107, 107);
+  color: rgb(87, 87, 87);
+  box-shadow: inset 2px 2px 5px rgba(218, 218, 218, 0.842);
+}
+.steps-input::placeholder {
+  font-size: 17px;
+}
+.steps-input-add-button {
+  margin-left: -35px; 
+  width: 30px; 
+  height: 30px; 
+  border-radius: 15px; 
+  font-size: 35px; 
+  color: rgb(48, 48, 48);
+  background-color: white; 
+}
+.steps-input-add-button:hover {
+  background-color: rgb(43, 43, 182);
+  color: white;
+}
+.steps-input-done-button {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 11px;
+  /* border: solid 1px rgb(43, 43, 182);
+  color: rgb(43, 43, 182);
+  background-color: white; */
+
+  border: none;
+  color: rgb(43, 43, 182);
+  background-color: rgba(231, 231, 231, 0.322);
+}
+.steps-input-done-button:hover {
+  color: white;
+  background-color: rgb(43, 43, 182);
+  box-shadow: 2px 2px 4px rgb(114, 114, 114);
+}
+
+.steps-edit-input-cancel-button {
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 23px; 
+  color: darkred; 
+}
+.ingredients-edit-input-cancel-button:hover,
+.steps-edit-input-cancel-button:hover {
+  background-color: rgba(219, 219, 219, 0.233);
+  box-shadow: 1px 1px 4px rgba(114, 114, 114, 0.397);
+}
+.ingredients-edit-input-cancel-button:active,
+.steps-edit-input-cancel-button:active {
+  background-color: rgba(219, 219, 219, 0.329);
+}
+
+
+.steps-container {
+  width: 67%;
+  flex-direction: column;
+  /* border: 3px solid green; */
+  /* transition: 3s; */
+
+  /* for the delete message */
+  position: relative;
+}
+/* for the steps delete button */
+.steps-container:hover {
+  .steps-delete-button {
+    opacity: 1;
+  }
+}
+.steps-section-header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+  width: 90%;
+  padding: 10px 0;
+  font-size: 24px;
+}
+.ingredients-section-header, 
+.steps-section-header {
+  text-align: center;
+  font-family: arial;
+  position: relative;
+}
+
+.steps-section-header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  color: darkred;
+  background-color: transparent;
+  border-radius: 5px;
+  opacity: 0;
+  cursor: default;
+}
+.steps-section-header button>svg,
+.ingredients-section-header button>svg {
+  /* width: 27px; */
+  /* height: 27px; */
+  fill: hsl(0, 110%, 35%);
+}
+/* .steps-delete-button-normal {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border: 2.5px solid darkred;
+  color: darkred;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  cursor: default;
+} */
+
+.steps-delete-button,
+.ingredients-delete-button {
+  transition: 0.5s;
+}
+.steps-delete-button:hover,
+.ingredients-delete-button:hover {
+  cursor: pointer;
+}
+.steps-delete-button:hover>svg,
+.ingredients-delete-button:hover>svg {
+  fill: darkred;
+}
+
+.delete-steps-message-holder {
+  /* border: 3px blue solid;  */
+  position: absolute; 
+  inset: 0 0 -11px 0;
+  border-radius: 10px;
+  backdrop-filter: blur(3px); 
+}
+.delete-steps-message {
+  flex-direction: column; 
+  /* border: 2px solid red;  */
+  padding: 20px; 
+  font-family: arial; 
+  font-size: 18px;
+  backdrop-filter: blur(50px);
+}
+.delete-steps-button-container {
+  width: 120px;
+  justify-content: space-between; 
+  margin-top: 15px;
+  /* border: 1px solid red; */
+}
+.delete-steps-button-container button {
+  width: 50px; 
+  height: 30px; 
+  font-size: 15px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 2px;
+}
+.delete-steps-button-container button:active {
+  background-color: rgb(151, 151, 151);
+}
+
+
+.steps-li-holder {
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.steps-li-edit-button {
+  opacity: 0;
+  border-radius: 3px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  font-size: 20px;
+  right: 30px; 
+  transition: 0.7s;
+  /* background-color: aqua; */
+}
+.steps-li-holder:hover {
+  .steps-li-edit-button {
+    opacity: 1;
+  }
+}
+.steps-li-edit-button:hover {
+  background-color: rgba(221, 221, 221, 0.171);
+}
+.steps-li-edit-button:active {
+  background-color: rgba(221, 221, 221, 0.37);
+}
+
+
+.ingredients-li-holder {
+  /* display: flex; */
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.ingredients-li-edit-button {
+  opacity: 0;
+  border-radius: 3px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  font-size: 20px;
+  right: 10px; 
+  transition: 0.7s;
+  /* background-color: aqua; */
+}
+.ingredients-li-holder:hover {
+  .ingredients-li-edit-button {
+    opacity: 1;
+  }
+}
+.ingredients-li-edit-button:hover {
+  background-color: rgba(221, 221, 221, 0.171);
+}
+.ingredients-li-edit-button:active {
+  background-color: rgba(221, 221, 221, 0.37);
+}
+
+
+.steps-list {
+  padding: 12px 5px 3px 15px;
+  width: 90%;
+  /* border: brown 3px solid; */
+  margin: 0;
+} 
+.steps-info-text {
+  text-align: center; 
+  font-size: 25px; 
+  font-family: cursive; 
+  color: rgb(199, 199, 199);
+}
+.steps-list li{
+
+  font-family: cursive;
+  font-size: 20px;
+  color: rgb(54, 54, 54)
+  /* border-bottom: 1px solid black; */
+}
+.ingredients-container {
+  border-radius: 20px;
+  border: 3px solid rgba(0, 0, 0, 0.134);
+  flex-direction: column;
+  width: 32%;
+  padding: 0 0 10px 0;
+  margin-top: 15px;
+  position: relative;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.165);
+}
+.ingredients-container:hover {
+  .ingredients-delete-button {
+    opacity: 1;
+  }
+}
+.ingredients-section-header {
+  font-family: arial;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.459); */
+  border-bottom: solid 2px rgba(0, 0, 0, 0.134);
+}
+.ingredients-section-header button {
+  position: absolute;
+  right: 10px;
+  width: 33px;
+  background-color: transparent;
+  border-radius: 5px;
+  opacity: 0;
+  cursor: default;
+}
+
+
+.delete-ingredients-message-holder {
+  /* border: 3px blue solid;  */
+  position: absolute; 
+  inset: 0;
+  border-radius: 19px;
+  backdrop-filter: blur(3px); 
+}
+.delete-ingredients-message {
+  flex-direction: column; 
+  /* border: 2px solid red;  */
+  padding: 5px; 
+  font-family: arial; 
+  font-size: 14px;
+  backdrop-filter: blur(50px);
+}
+.delete-ingredients-button-container {
+  display: flex; 
+  align-items: center; 
+  width: 105px;
+  justify-content: space-between; 
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+.delete-ingredients-button-container button {
+  width: 45px; 
+  height: 28px; 
+  font-size: 12px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 2px;
+}
+.delete-ingredients-button-container button:active {
+  background-color: rgb(151, 151, 151);
+}
+
+
+.ingredients-list {
+  /* border: 1px red solid; */
+  margin: 0;
+  width: 90%;
+  padding: 5px 5px 0 40px;
+}
+.ingredients-info-text {
+  text-align: center; 
+  font-size: 20px; 
+  font-family: cursive; 
+  color: rgb(199, 199, 199); 
+  width: 100%; 
+  /* border: 1px solid red;  */
+  margin-left: -18px;
+}
+.ingredients-list li {
+  font-family: cursive;
+  font-size: 18px;
+  color: rgb(54, 54, 54);
+  margin: 0;
+}
+
+.ingredients-input-container-holder {
+  width: 100%; 
+}
+.ingredients-input-container {
+  width: 90%;
+  padding-top: 8px;
+  border-top: rgba(0, 0, 0, 0.459) solid 1px;
+}
+.ingredients-input,
+.ingredients-edit-input {
+  width: 62%;
+  padding: 7px 31px 7px 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(107, 107, 107);
+  font-size: 17px;
+  color: rgb(87, 87, 87);
+  box-shadow: inset 2px 2px 5px rgba(218, 218, 218, 0.842);
+}
+.ingredients-input::placeholder {
+  font-size: 14px;
+}
+.ingredients-input-add-button {
+  margin-left: -30px; 
+  width: 25px; 
+  height: 25px; 
+  border-radius: 20px; 
+  font-size: 30px; 
+  background-color: white; 
+  color: rgb(48, 48, 48);
+}
+.ingredients-input-add-button:hover {
+  background-color: rgb(43, 43, 182);
+  color: white;
+}
+.ingredients-input-done-button {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 10px;
+  color: rgb(43, 43, 182);
+  background-color: transparent;
+}
+.ingredients-input-done-button:hover {
+  color: white;
+  background-color: rgb(43, 43, 182);
+  box-shadow: 1px 1px 4px rgb(114, 114, 114);
+}
+
+.ingredients-edit-input-cancel-button {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 23px; 
+  color: darkred; 
+  border-color: darkred;
+}

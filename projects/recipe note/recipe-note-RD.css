@@ -1,0 +1,1815 @@
+
+/* RESPONSIVENESS */
+/* SMALLEST */
+@media (max-width: 599px) {
+  body {
+    padding: 0;
+    /* background-color: rgba(144, 238, 144, 0.253); */
+  }
+  .for-borders {
+    border: none;
+    padding: 110px 10px 0 15px;
+  }
+  .for-fixed-property {
+    /* border: 3px solid red;  */
+    width: 100%;
+  }
+  header {
+    /* border: 3px solid green; */
+    margin-top: -5px;
+  }
+  h1 {
+    /* border: 2px red solid; */
+    font-size: 35px;
+    margin: 0;
+  }
+  nav {
+    /* border: 3px solid green; */
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  }
+  .add-recipe-button, 
+  .edit-recipe-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+  }
+  .add-recipe-button {
+    font-size: 35px;
+  }
+  .edit-recipe-button {
+    font-size: 20px;
+  }
+  .recipe-input-container {
+    /* border: red solid 2px;  */
+    width: 70%; 
+  }
+  .recipe-input {
+    height: 17px;
+    padding: 9px 35px 9px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+  }
+  .recipe-input::placeholder {
+    font-size: 13px;
+  }
+  .recipe-input-add-button,
+  .recipe-input-cancel-button {
+    width: 28px;
+    height: 28px;
+    font-size: 27px;
+    right: 5.5px;
+  }
+  .recipe-input-cancel-button {
+    font-size: 15px;
+  }
+  .cancel-selectall-button-holder {
+    /* border: 3px solid blue; */
+    right: 45px;
+  }
+  .cancel-button {
+    font-size: 15px;
+    width: 70px;
+    height: 30px;
+  }
+  .select-all-button {
+    height: 30px;
+    font-size: 15px;
+  }
+  .main-delete-message-container {
+    /* border: 3px solid black;  */
+    padding: 15px 20px; 
+  }
+  .main-delete-message-text {
+    font-size: 17px; 
+    margin-bottom: 13px; 
+  }
+  .main-delete-message-buttons-container {
+    width: 150px;
+    /* border: 2px solid red; */
+  }
+  .main-delete-message-buttons-container button{
+    width: 60px; 
+    height: 35px; 
+    font-size: 14px;
+  }
+  main {
+    margin-top: -10px;
+    padding: 0 3%;
+  }
+  .each-recipe {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    /* border: 2px solid red; */
+    /* border-bottom: 2px rgb(99, 99, 99) dashed; */
+  }
+  .recipe-name-container {
+    /* border: 3px solid red; */
+    padding: 3px;
+  }
+  .recipe-name {
+    font-size: 25px;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    left: -20px;
+  }
+  .recipe-name-edit-input {
+    height: 17px;
+    width: 130px;
+    padding: 10px 36px 10px 5px;
+    font-size: 23px;
+  }
+  .recipe-name-edit-cancel-button {
+    right: 43px;
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+  .recipe-name-edit-done-button {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    margin-left: 6px;
+  }
+  .each-recipe-add-button {
+    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+  }
+  .delete-checkbox {
+    background-color: rgba(231, 231, 231, 0.685);
+    /* background-color: blue; */
+    width: 35px;
+    height: 22px;
+  }
+  .delete-checkbox::before {
+    width: 18px;
+    height: 18px;
+    left: 11.1px;
+  }
+  .delete-checkbox:checked::before {
+    left: 24px;
+  }
+  .tool-tip { 
+    top: 21px; 
+    left: -107px; 
+    font-size: 13px; 
+    border-radius: 18px 0 18px 18px;
+  }
+  .tool-tip-add-step {
+    padding: 8px 16px;
+    border-radius: 18px 0 0 0;
+  }
+  .tool-tip-add-ingredient {
+    padding: 8px 16px 9px;
+    border-radius: 0 0 18px 18px;
+  }
+  .steps-ingredients-section {
+    flex-direction: column;
+    /* border: 2px solid red; */
+  }
+  .steps-container {
+    width: 97%;
+    align-self: self-start;
+    /* border: 3px solid green; */
+    /* padding-bottom: 8px; */
+  }
+  .steps-section-header {
+    padding: 8px 0;
+    font-size: 22px;
+  }
+  .steps-section-header button {
+    /* width: 21px;
+    height: 21px; */
+    font-size: 17px;
+  }
+  .delete-steps-message-holder {
+    /* border: 3px blue solid;  */
+    inset: 0;
+    border-radius: 0px;
+  }
+  .delete-steps-message {
+    /* border: 2px solid red;  */
+    padding: 10px; 
+    font-size: 15px;
+  }
+  .delete-steps-button-container {
+    width: 105px;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+  }
+  .delete-steps-button-container button {
+    width: 45px; 
+    height: 28px; 
+    font-size: 13px;
+  }
+  .steps-list {
+    padding: 1px 5px 3px 15px;
+    border-bottom: 1px black dotted;
+    /* border: brown 3px solid; */
+  } 
+  .steps-info-text {
+    font-size: 20px; 
+  }
+  .steps-li-holder {
+    /* position: relative; */
+    /* border: 2px solid red; */
+    padding: 0 20px 0 0;
+  }
+  .steps-list li{
+    font-size: 18px;
+    /* border: 2px solid red; */
+  }
+  .steps-li-edit-button {
+    /* opacity: 1; */
+    width: 20px;
+    height: 20px;
+    font-size: 17px;
+    right: 20px; 
+    /* border: 2px solid red; */
+  }
+  .steps-input-container-holder {
+    width: 100%; 
+    /* border: 2px solid green; */
+  }
+  .steps-input-container {
+    /* border: 2px solid blue; */
+    padding: 8px 0;
+    /* background-color: aqua; */
+  }
+  .steps-input,
+  .steps-edit-input {
+    width: 70%;
+    height: 19px;
+    font-size: 17px;
+  }
+  .steps-input::placeholder {
+    font-size: 15px;
+  }
+  .steps-input-add-button {
+    margin-left: -33.3px; 
+    width: 28px; 
+    height: 28px; 
+    font-size: 30px;
+  }
+  .steps-input-done-button {
+    width: 32px;
+    height: 32px;
+  }
+  .steps-edit-input-cancel-button {
+    width: 32px;
+    height: 32px;
+    font-size: 20px; 
+  }
+  .ingredients-container {
+    border-radius: 20px;
+    /* border: 2px solid red; */
+    align-self: self-end;
+    width: 60%;
+    padding: 0 0 10px 0;
+    margin-top: 10px;
+  }
+  .ingredients-section-header {
+    padding: 8px 0;
+    font-size: 17px;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.134);
+  }
+  .ingredients-section-header button {
+    font-size: 17px;
+  }
+
+  .ingredients-list {
+    /* border: 1px red solid; */
+    width: 89%;
+    padding: 5px 0px 0 30px;
+  }
+  .ingredients-info-text {
+    font-size: 16px; 
+  }
+  .ingredients-li-holder {
+    /* position: relative; */
+    /* border: 2px red solid; */
+    padding-right: 25px;
+  }
+  .ingredients-list li {
+    font-size: 17px;
+    /* border: 2px red solid; */
+  }
+  .ingredients-li-edit-button {
+    width: 20px;
+    height: 20px;
+    font-size: 17px;
+    right: 5px; 
+    /* opacity: 1;
+    border: 2px red solid; */
+  }
+  .delete-ingredients-message-holder {
+    /* border: 3px blue solid;  */
+    border-radius: 20px;
+  }
+}
+
+@media (551px < width < 599px) {
+  /* body {
+    background-color: lightblue;
+  } */
+
+  .for-borders {
+    padding: 110px 4% 0 4%;
+  }
+}
+
+
+/* NEXT */
+@media (599px <= width < 700px) {
+  .for-borders {
+    border: none;
+    padding: 110px 15px 0 20px;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    left: -13px;
+  }
+}
+
+@media (700px <= width <= 800px) {
+  /* body {
+    background-color: aqua;
+  } */
+
+  .for-borders {
+    border: none;
+    padding: 110px 4% 0 5%;
+  }
+} 
+
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    /* background-color: rgba(255, 223, 228, 0.315); */
+    padding: 0;
+  }
+
+  /* .for-borders {
+    border: none;
+    padding: 110px 15px 0 20px;
+  } */
+
+  .for-fixed-property {
+    /* border: 3px solid red;  */
+    position: fixed; 
+    width: 100%;
+  }
+  header {
+    /* border: 3px solid green; */
+    margin-top: -5px;
+  }
+  h1 {
+    /* border: 2px red solid; */
+    font-size: 35px;
+    margin: 0;
+  }
+  nav {
+    /* border: 3px solid green; */
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  }
+  .add-recipe-button, 
+  .edit-recipe-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+  }
+  .add-recipe-button {
+    font-size: 35px;
+  }
+  .edit-recipe-button {
+    font-size: 20px;
+  }
+  .recipe-input-container {
+    /* border: red solid 2px;  */
+    width: 70%; 
+  }
+  .recipe-input {
+    height: 17px;
+    padding: 9px 35px 9px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+  }
+  .recipe-input::placeholder {
+    font-size: 13px;
+  }
+  .recipe-input-add-button,
+  .recipe-input-cancel-button {
+    width: 28px;
+    height: 28px;
+    font-size: 27px;
+    right: 5.5px;
+  }
+  .recipe-input-cancel-button {
+    font-size: 15px;
+  }
+  .recipe-input-cancel-button:hover {
+    background-color:  rgb(184, 0, 0);
+    color: white;
+  }
+  .cancel-selectall-button-holder {
+    /* border: 3px solid blue; */
+    right: 45px;
+  }
+  .cancel-button {
+    font-size: 15px;
+    width: 70px;
+    height: 30px;
+  }
+  .select-all-button {
+    height: 30px;
+    font-size: 15px;
+  }
+  .main-delete-message-container {
+    /* border: 3px solid black;  */
+    padding: 15px 20px; 
+  }
+  .main-delete-message-text {
+    font-size: 17px; 
+    margin-bottom: 13px; 
+  }
+  .main-delete-message-buttons-container {
+    width: 150px;
+    /* border: 2px solid red; */
+  }
+  .main-delete-message-buttons-container button{
+    width: 60px; 
+    height: 35px; 
+    font-size: 14px;
+  }
+  
+  main {
+    margin-top: -10px;
+    /* border: 3px solid green;  */
+  }
+  .each-recipe {
+    /* border: 2px solid red; */
+    padding-bottom: 20px;
+  }
+  .recipe-name-container {
+    /* border: 3px solid red; */
+    padding: 3px;
+  }
+  .recipe-name {
+    font-size: 25px;
+  }
+
+  .recipe-name-edit-input {
+    height: 17px;
+    width: 130px;
+    padding: 10px 36px 10px 5px;
+    font-size: 23px;
+  }
+  .recipe-name-edit-cancel-button {
+    right: 43px;
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+  .recipe-name-edit-done-button {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    margin-left: 6px;
+  }
+  .each-recipe-add-button {
+    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+  }
+  .delete-checkbox {
+    background-color: rgba(231, 231, 231, 0.685);
+    /* background-color: blue; */
+    width: 35px;
+    height: 22px;
+  }
+  .delete-checkbox::before {
+    width: 18px;
+    height: 18px;
+    left: 11.1px;
+  }
+  .delete-checkbox:checked::before {
+    left: 24px;
+  }
+  .tool-tip { 
+    top: 21px; 
+    left: -100px; 
+    font-size: 12px; 
+    border-radius: 18px 0 18px 18px;
+  }
+  .tool-tip-add-step {
+    padding: 8px 16px;
+    border-radius: 18px 0 0 0;
+  }
+  .tool-tip-add-ingredient {
+    padding: 8px 16px 9px;
+    border-radius: 0 0 18px 18px;
+  }
+  .steps-ingredients-section {
+    padding: 0px 10px 8px 0;
+  }
+  .steps-input-container {
+    /* border: 2px solid blue; */
+    padding-top: 8px;
+  }
+  .steps-input,
+  .steps-edit-input {
+    width: 65%;
+    padding: 6px 35px 6px 12px;
+    font-size: 17px;
+  }
+  .steps-input::placeholder {
+    font-size: 14px;
+  }
+  .steps-input-add-button {
+    margin-left: -29.3px; 
+    width: 24px; 
+    height: 24px; 
+    font-size: 25px; 
+  }
+  .steps-input-done-button {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+    /* border: none;
+    color: rgb(43, 43, 182);
+    background-color: rgba(231, 231, 231, 0.322); */
+  }
+  .steps-edit-input-cancel-button {
+    width: 31px;
+    height: 31px;
+    font-size: 22px; 
+  }
+  .steps-section-header {
+    padding: 8px 0;
+    font-size: 20px;
+  }
+  .steps-section-header button {
+    width: 21px;
+    height: 21px;
+    font-size: 18px;
+  }
+  .delete-steps-message {
+    /* border: 2px solid red;  */
+    padding: 15px; 
+    font-size: 15px;
+  }
+  .delete-steps-button-container {
+    width: 108px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-steps-button-container button {
+    width: 47px; 
+    height: 24px; 
+    font-size: 14px;
+  }
+  .steps-li-edit-button {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    right: 16px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .steps-list {
+    padding: 8px 5px 3px 17px;
+    /* border: brown 3px solid; */
+    margin: 0;
+  } 
+  .steps-info-text {
+    font-size: 20px; 
+  }
+  .steps-li-holder {
+    /* border: 2px solid red; */
+    padding-right: 20px;
+  }
+  .steps-list li{
+    margin-bottom: 3px;
+    font-size: 17px;
+    /* border: 1px solid red; */
+  }
+  .ingredients-container {
+    padding: 0 0 8px 0;
+    margin-top: 12px;
+  }
+  .ingredients-section-header {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .ingredients-section-header button {
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    font-size: 14px;
+    border-radius: 3px;
+    /* opacity: 1; */
+  }
+
+  /* .delete-ingredients-message-holder {
+    border: 3px blue solid; 
+  } */
+
+  .delete-ingredients-message { 
+    width: 100%;
+    /* padding: 5px;  */
+    font-family: arial; 
+    font-size: 14px;
+    text-align: center;
+    /* border: solid 2px red; */
+  }
+  .delete-ingredients-button-container {
+    width: 95px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-ingredients-button-container button {
+    width: 42px; 
+    height: 25px; 
+    font-size: 13px;
+  }
+  .ingredients-list {
+    /* border: 1px red solid; */
+    /* width: 75%; */
+    padding: 5px 5px 0 40px;
+  }
+  .ingredients-info-text {
+    font-size: 15px; 
+    /* border: 1px solid red;  */
+    margin: 0 0 0 -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .ingredients-li-holder {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .ingredients-list li {
+    /* margin-bottom: 6px; */
+    font-size: 15px;
+    /* border: 2px solid red; */
+    width: 80%;
+  }
+  .ingredients-li-edit-button {
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    right: 5px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .ingredients-input-container-holder {
+    width: 100%; 
+  }
+  .ingredients-input-container {
+    width: 90%;
+    padding-top: 6px;
+  }
+  .ingredients-input,
+  .ingredients-edit-input {
+    height: 16px;
+    padding: 7px 28px 7px 10px;
+    font-size: 15px;
+  }
+  .ingredients-input::placeholder {
+    font-size: 11.7px;
+  }
+  .ingredients-input-add-button {
+    margin-left: -27px; 
+    width: 22px; 
+    height: 22px;  
+    font-size: 22px;
+  }
+  .ingredients-input-done-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 9px;
+  }
+  
+  .ingredients-edit-input-cancel-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 20px; 
+  }
+}
+
+
+/* MID */
+@media (800px < width <= 900px) {
+  body {
+    /* background-color: rgba(0, 255, 255, 0.212); */
+    padding: 0 5%;
+  }
+  .for-fixed-property {
+    position: fixed; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    margin: 0;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    left: -15px;
+  }
+
+}
+
+@media (900px < width < 990px) {
+  body {
+    /* background-color: aqua; */
+    padding: 0 7%;
+  }
+  .for-fixed-property {
+    position: fixed; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 84.5%;
+    margin: 0;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    left: -18px;
+  }
+}
+
+@media (800px < width <= 990px) {
+  .for-borders {
+    padding: 120px 0 0 0;
+  }
+  header {
+    /* border: 3px solid green; */
+    margin-top: 5px;
+  }
+  h1 {
+    /* border: 2px red solid; */
+    font-size: 35px;
+    margin: 0;
+  }
+  nav {
+    /* border: 3px solid green; */
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(193, 193, 193, 0.198);
+  }
+
+  .add-recipe-button, 
+  .edit-recipe-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+  }
+  .add-recipe-button {
+    font-size: 35px;
+  }
+  .edit-recipe-button {
+    font-size: 20px;
+  }
+  .recipe-input-container {
+    /* border: red solid 2px;  */
+    width: 80%; 
+  }
+  .recipe-input {
+    height: 18px;
+    padding: 9px 35px 9px 9px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .recipe-input::placeholder {
+    font-size: 14px;
+  }
+  .recipe-input-add-button,
+  .recipe-input-cancel-button {
+    width: 28px;
+    height: 28px;
+    font-size: 27px;
+    right: 5.5px;
+  }
+  .recipe-input-cancel-button {
+    font-size: 15px;
+  }
+  .cancel-selectall-button-holder {
+    /* border: 3px solid blue; */
+    right: 48px;
+  }
+  .cancel-button {
+    font-size: 17px;
+    width: 70px;
+    height: 32px;
+  }
+  .select-all-button {
+    height: 32px;
+    font-size: 18px;
+  }
+  .main-delete-message-container {
+    /* border: 3px solid black;  */
+    padding: 15px 20px; 
+  }
+  .main-delete-message-text {
+    font-size: 18px; 
+    margin-bottom: 13px; 
+  }
+  .main-delete-message-buttons-container {
+    width: 160px;
+    /* border: 2px solid red; */
+  }
+  .main-delete-message-buttons-container button{
+    width: 60px; 
+    height: 35px; 
+    font-size: 14px;
+  }
+  main {
+    margin-top: 0;
+    padding: 0 2% 0 3%;
+  }
+
+  .each-recipe {
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .recipe-name-container {
+    /* border: 3px solid red; */
+    padding: 3px;
+  }
+  .recipe-name {
+    font-size: 28px;
+  }
+
+  .recipe-name-edit-input {
+    height: 17px;
+    width: 130px;
+    padding: 10px 36px 10px 5px;
+    font-size: 25px;
+  }
+  .recipe-name-edit-cancel-button {
+    right: 43px;
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+  .recipe-name-edit-done-button {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    margin-left: 6px;
+  }
+  .each-recipe-add-button {
+    font-size: 32px;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+  }
+  .delete-checkbox {
+    background-color: rgba(231, 231, 231, 0.685);
+    /* background-color: blue; */
+    width: 35px;
+    height: 22px;
+  }
+  .delete-checkbox::before {
+    width: 18px;
+    height: 18px;
+    left: 11.1px;
+  }
+  .delete-checkbox:checked::before {
+    left: 24px;
+  }
+  .tool-tip { 
+    top: 23px; 
+    left: -105px; 
+    font-size: 13px; 
+    border-radius: 18px 0 18px 18px;
+  }
+  .tool-tip-add-step {
+    padding: 8px 16px;
+    border-radius: 18px 0 0 0;
+  }
+  .tool-tip-add-ingredient {
+    padding: 8px 16px 9px;
+    border-radius: 0 0 18px 18px;
+  }
+  .steps-ingredients-section {
+    padding: 0px 10px 8px 0;
+  }
+  .steps-input-container {
+    /* border: 2px solid blue; */
+    padding-top: 8px;
+  }
+  .steps-input,
+  .steps-edit-input {
+    width: 70%;
+    padding: 6px 35px 6px 12px;
+    font-size: 18px;
+  }
+  .steps-input::placeholder {
+    font-size: 15px;
+  }
+  .steps-input-add-button {
+    margin-left: -30px; 
+    width: 24px; 
+    height: 24px; 
+    font-size: 25px; 
+  }
+  .steps-input-done-button {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+    margin-left: 12px;
+  }
+  .steps-edit-input-cancel-button {
+    width: 31px;
+    height: 31px;
+    font-size: 22px; 
+    margin-left: 12px;
+  }
+  .steps-section-header {
+    padding: 8px 0;
+    font-size: 22px;
+  }
+  .steps-section-header button {
+    /* width: 23px;
+    height: 23px; */
+    font-size: 19px;
+  }
+  .delete-steps-message {
+    /* border: 2px solid red;  */
+    padding: 15px; 
+    font-size: 16px;
+  }
+  .delete-steps-button-container {
+    width: 112px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-steps-button-container button {
+    width: 50px; 
+    height: 27px; 
+    font-size: 16px;
+  }
+  .steps-li-edit-button {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    right: 22px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .steps-list {
+    padding: 8px 5px 3px 17px;
+    /* border: brown 3px solid; */
+    margin: 0;
+  } 
+  .steps-info-text {
+    font-size: 20px; 
+  }
+  .steps-li-holder {
+    /* border: 2px solid red; */
+    padding-right: 20px;
+  }
+  .steps-list li{
+    font-size: 19px;
+    /* border: 1px solid red; */
+  }
+  .ingredients-container {
+    padding: 0 0 8px 0;
+    margin-top: 12px;
+  }
+  .ingredients-section-header {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+  .ingredients-section-header button {
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    font-size: 15px;
+    border-radius: 3px;
+    /* opacity: 1; */
+  }
+
+  /* .delete-ingredients-message-holder {
+    border: 3px blue solid; 
+  } */
+
+  .delete-ingredients-message { 
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    /* border: solid 2px red; */
+  }
+  .delete-ingredients-button-container {
+    width: 105px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-ingredients-button-container button {
+    width: 45px; 
+    height: 28px; 
+    font-size: 14px;
+  }
+  .ingredients-list {
+    /* border: 1px red solid; */
+    /* width: 75%; */
+    padding: 5px 5px 0 40px;
+  }
+  .ingredients-info-text {
+    width: 100%;
+    font-size: 15px; 
+    /* border: 1px solid red;  */
+    margin: 0 0 0 -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .ingredients-li-holder {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .ingredients-list li {
+    /* margin-bottom: 6px; */
+    font-size: 18px;
+    /* border: 2px solid red; */
+    width: 80%;
+  }
+  .ingredients-li-edit-button {
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    right: 5px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .ingredients-input-container-holder {
+    width: 100%; 
+  }
+  .ingredients-input-container {
+    width: 90%;
+    padding-top: 6px;
+  }
+  .ingredients-input,
+  .ingredients-edit-input {
+    height: 16px;
+    padding: 7px 28px 7px 10px;
+    font-size: 15px;
+  }
+  .ingredients-input::placeholder {
+    font-size: 12px;
+  }
+  .ingredients-input-add-button {
+    margin-left: -27px; 
+    width: 22px; 
+    height: 22px;  
+    font-size: 24px;
+  }
+  .ingredients-input-done-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 9px;
+  }
+  .ingredients-edit-input-cancel-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 20px; 
+  }
+}
+
+
+/* LARGE */
+@media (990px < width <= 1250px) {
+  body {
+    /* background-color: rgba(0, 255, 255, 0.212); */
+    padding: 0 8%;
+  }
+  .for-fixed-property {
+    position: fixed; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin: 0;
+  }
+  .dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    left: -22px;
+  }
+  .for-borders {
+    padding: 110px 0 0 0;
+  }
+  header {
+    /* border: 3px solid green; */
+    margin-top: 5px;
+  }
+  h1 {
+    /* border: 2px red solid; */
+    font-size: 35px;
+    margin: 0;
+  }
+  nav {
+    /* border: 3px solid green; */
+    padding: 10px 10px;
+    border-bottom: 2px solid rgba(193, 193, 193, 0.198);
+  }
+
+  .add-recipe-button, 
+  .edit-recipe-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+  }
+  .add-recipe-button {
+    font-size: 35px;
+  }
+  .edit-recipe-button {
+    font-size: 20px;
+  }
+  .recipe-input-container {
+    /* border: red solid 2px;  */
+    width: 90%; 
+  }
+  .recipe-input {
+    height: 18px;
+    padding: 9px 35px 9px 9px;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .recipe-input::placeholder {
+    font-size: 14px;
+  }
+  .recipe-input-add-button,
+  .recipe-input-cancel-button {
+    width: 28px;
+    height: 28px;
+    font-size: 27px;
+    right: 5.5px;
+  }
+  .recipe-input-cancel-button {
+    font-size: 15px;
+  }
+  .cancel-selectall-button-holder {
+    /* border: 3px solid blue; */
+    right: 48px;
+  }
+  .cancel-button {
+    font-size: 17px;
+    width: 70px;
+    height: 32px;
+  }
+  .select-all-button {
+    height: 32px;
+    font-size: 18px;
+  }
+  .main-delete-message-container {
+    /* border: 3px solid black;  */
+    padding: 15px 20px; 
+  }
+  .main-delete-message-text {
+    font-size: 18px; 
+    margin-bottom: 13px; 
+  }
+  .main-delete-message-buttons-container {
+    width: 160px;
+    /* border: 2px solid red; */
+  }
+  .main-delete-message-buttons-container button{
+    width: 60px; 
+    height: 35px; 
+    font-size: 14px;
+  }
+  main {
+    margin-top: 0;
+    padding: 0 3% 0 5%;
+  }
+
+  .each-recipe {
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .recipe-name-container {
+    /* border: 3px solid red; */
+    padding: 3px;
+  }
+  .recipe-name {
+    font-size: 30px;
+  }
+
+  .recipe-name-edit-input {
+    height: 17px;
+    width: 130px;
+    padding: 10px 36px 10px 5px;
+    font-size: 25px;
+  }
+  .recipe-name-edit-cancel-button {
+    right: 43px;
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+  .recipe-name-edit-done-button {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    margin-left: 6px;
+  }
+  .each-recipe-add-button {
+    font-size: 32px;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+  }
+  .delete-checkbox {
+    background-color: rgba(231, 231, 231, 0.685);
+    /* background-color: blue; */
+    width: 35px;
+    height: 22px;
+  }
+  .delete-checkbox::before {
+    width: 18px;
+    height: 18px;
+    left: 11.1px;
+  }
+  .delete-checkbox:checked::before {
+    left: 24px;
+  }
+  .tool-tip { 
+    top: 24px; 
+    left: -108px; 
+    font-size: 13px; 
+    border-radius: 18px 0 18px 18px;
+  }
+  .tool-tip-add-step {
+    padding: 8px 16px;
+    border-radius: 18px 0 0 0;
+  }
+  .tool-tip-add-ingredient {
+    padding: 8px 16px 9px;
+    border-radius: 0 0 18px 18px;
+  }
+  .steps-ingredients-section {
+    padding: 0px 10px 10px 0;
+  }
+  .steps-input-container {
+    /* border: 2px solid blue; */
+    padding-top: 10px;
+  }
+  .steps-input,
+  .steps-edit-input {
+    width: 65%;
+    padding: 6px 35px 6px 12px;
+    font-size: 18px;
+  }
+  .steps-input::placeholder {
+    font-size: 15px;
+  }
+  .steps-input-add-button {
+    margin-left: -30px; 
+    width: 24px; 
+    height: 24px; 
+    font-size: 25px; 
+  }
+  .steps-input-done-button {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+    margin-left: 12px;
+  }
+  .steps-edit-input-cancel-button {
+    width: 31px;
+    height: 31px;
+    font-size: 22px; 
+    margin-left: 12px;
+  }
+  .steps-section-header {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  .steps-section-header button {
+    width: 23px;
+    height: 23px;
+    font-size: 19px;
+  }
+  .delete-steps-message {
+    /* border: 2px solid red;  */
+    padding: 15px; 
+    font-size: 16px;
+  }
+  .delete-steps-button-container {
+    width: 112px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-steps-button-container button {
+    width: 50px; 
+    height: 27px; 
+    font-size: 16px;
+  }
+  .steps-li-edit-button {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    right: 28px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .steps-list {
+    padding: 8px 5px 3px 17px;
+    /* border: brown 3px solid; */
+    margin: 0;
+  } 
+  .steps-info-text {
+    font-size: 20px; 
+  }
+  .steps-li-holder {
+    /* border: 2px solid red; */
+    padding-right: 20px;
+  }
+  .steps-list li{
+    font-size: 19px;
+    /* border: 1px solid red; */
+  }
+  .ingredients-container {
+    padding: 0 0 10px 0;
+    margin-top: 12px;
+  }
+  .ingredients-section-header {
+    padding: 8px 0;
+    font-size: 17px;
+  }
+  .ingredients-section-header button {
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    font-size: 15px;
+    border-radius: 3px;
+    /* opacity: 1; */
+  }
+
+  /* .delete-ingredients-message-holder {
+    border: 3px blue solid; 
+  } */
+
+  .delete-ingredients-message { 
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    /* border: solid 2px red; */
+  }
+  .delete-ingredients-button-container {
+    width: 105px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-ingredients-button-container button {
+    width: 45px; 
+    height: 28px; 
+    font-size: 14px;
+  }
+  .ingredients-list {
+    /* border: 1px red solid; */
+    /* width: 75%; */
+    padding: 5px 5px 0 40px;
+  }
+  .ingredients-info-text {
+    width: 100%;
+    font-size: 17px; 
+    /* border: 1px solid red;  */
+    margin: 0 0 0 -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .ingredients-li-holder {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .ingredients-list li {
+    /* margin-bottom: 6px; */
+    font-size: 18px;
+    /* border: 2px solid red; */
+    width: calc(100% - 30px);
+  }
+  .ingredients-li-edit-button {
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    right: 5px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .ingredients-input-container-holder {
+    width: 100%; 
+  }
+  .ingredients-input-container {
+    width: 90%;
+    padding-top: 8px;
+  }
+  .ingredients-input,
+  .ingredients-edit-input {
+    height: 16px;
+    padding: 7px 28px 7px 10px;
+    font-size: 15px;
+  }
+  .ingredients-input::placeholder {
+    font-size: 14px;
+  }
+  .ingredients-input-add-button {
+    margin-left: -27px; 
+    width: 22px; 
+    height: 22px;  
+    font-size: 24px;
+  }
+  .ingredients-input-done-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 9px;
+  }
+  .ingredients-edit-input-cancel-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 20px; 
+  }
+}
+
+
+/* LARGEST */
+@media (1250px < width <= 1350px) {
+  body {
+    /* background-color: aqua; */
+    padding: 0 10%;
+  }
+  .for-fixed-property {
+    position: fixed; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 77%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1251px) {
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    left: -22px;
+  }
+  .for-borders {
+    padding: 120px 0 0 0;
+  }
+  header {
+    /* border: 3px solid green; */
+    margin-top: 5px;
+  }
+  h1 {
+    /* border: 2px red solid; */
+    font-size: 40px;
+    margin: 0;
+  }
+  nav {
+    /* border: 3px solid green; */
+    padding: 10px 15px;
+    border-bottom: 2px solid rgba(193, 193, 193, 0.198);
+  }
+
+  .add-recipe-button, 
+  .edit-recipe-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .add-recipe-button {
+    font-size: 35px;
+  }
+  .edit-recipe-button {
+    font-size: 23px;
+  }
+  .recipe-input-container {
+    /* border: red solid 2px;  */
+    width: 100%; 
+  }
+  .recipe-input {
+    height: 21px;
+    padding: 9px 37px 9px 9px;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  .recipe-input::placeholder {
+    font-size: 15px;
+  }
+  .recipe-input-add-button,
+  .recipe-input-cancel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 27px;
+    right: 6px;
+  }
+  .recipe-input-cancel-button {
+    font-size: 15px;
+  }
+  .cancel-selectall-button-holder {
+    /* border: 3px solid blue; */
+    right: 52px;
+  }
+  .cancel-button {
+    font-size: 17px;
+    width: 70px;
+    height: 32px;
+  }
+  .select-all-button {
+    height: 32px;
+    font-size: 18px;
+  }
+  .main-delete-message-container {
+    /* border: 3px solid black;  */
+    padding: 15px 20px; 
+  }
+  .main-delete-message-text {
+    font-size: 18px; 
+    margin-bottom: 13px; 
+  }
+  .main-delete-message-buttons-container {
+    width: 160px;
+    /* border: 2px solid red; */
+  }
+  .main-delete-message-buttons-container button{
+    width: 60px; 
+    height: 35px; 
+    font-size: 14px;
+  }
+  main {
+    margin-top: 0;
+    padding: 0 4% 0 5%;
+  }
+
+  .each-recipe {
+    /* border: 2px solid red; */
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+  .recipe-name-container {
+    /* border: 3px solid red; */
+    padding: 3px;
+  }
+  .recipe-name {
+    font-size: 30px;
+  }
+
+  .recipe-name-edit-input {
+    height: 17px;
+    width: 130px;
+    padding: 10px 36px 10px 5px;
+    font-size: 25px;
+  }
+  .recipe-name-edit-cancel-button {
+    right: 43px;
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+  }
+  .recipe-name-edit-done-button {
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    margin-left: 6px;
+  }
+  .each-recipe-add-button {
+    font-size: 32px;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+  }
+  .delete-checkbox {
+    background-color: rgba(231, 231, 231, 0.685);
+    /* background-color: blue; */
+    width: 35px;
+    height: 22px;
+  }
+  .delete-checkbox::before {
+    width: 18px;
+    height: 18px;
+    left: 11.1px;
+  }
+  .delete-checkbox:checked::before {
+    left: 24px;
+  }
+  .tool-tip { 
+    top: 24px; 
+    left: -108px; 
+    font-size: 13px; 
+    border-radius: 18px 0 18px 18px;
+  }
+  .tool-tip-add-step {
+    padding: 8px 16px;
+    border-radius: 18px 0 0 0;
+  }
+  .tool-tip-add-ingredient {
+    padding: 8px 16px 9px;
+    border-radius: 0 0 18px 18px;
+  }
+  .steps-ingredients-section {
+    padding: 0px 10px 10px 0;
+  }
+  .steps-input-container {
+    /* border: 2px solid blue; */
+    padding-top: 10px;
+  }
+  .steps-input,
+  .steps-edit-input {
+    width: 65%;
+    padding: 7px 35px 7px 12px;
+    font-size: 18px;
+  }
+  .steps-input::placeholder {
+    font-size: 16px;
+  }
+  .steps-input-add-button {
+    margin-left: -30px; 
+    width: 24px; 
+    height: 24px; 
+    font-size: 25px; 
+  }
+  .steps-input-done-button {
+    width: 31px;
+    height: 31px;
+    font-size: 10px;
+    margin-left: 12px;
+  }
+  .steps-edit-input-cancel-button {
+    width: 31px;
+    height: 31px;
+    font-size: 22px; 
+    margin-left: 12px;
+  }
+  .steps-section-header {
+    padding: 10px 0;
+    font-size: 24px;
+  }
+  .steps-section-header button {
+    width: 23px;
+    height: 23px;
+    font-size: 19px;
+  }
+  .delete-steps-message {
+    /* border: 2px solid red;  */
+    padding: 15px; 
+    font-size: 16px;
+  }
+  .delete-steps-button-container {
+    width: 112px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-steps-button-container button {
+    width: 50px; 
+    height: 27px; 
+    font-size: 16px;
+  }
+  .steps-li-edit-button {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    right: 28px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .steps-list {
+    padding: 8px 5px 3px 17px;
+    /* border: brown 3px solid; */
+    margin: 0;
+  } 
+  .steps-info-text {
+    font-size: 22px; 
+  }
+  .steps-li-holder {
+    /* border: 2px solid red; */
+    padding-right: 20px;
+  }
+  .steps-list li{
+    font-size: 21px;
+    /* border: 1px solid red; */
+  }
+  .ingredients-container {
+    padding: 0 0 10px 0;
+    margin-top: 12px;
+  }
+  .ingredients-section-header {
+    padding: 8px 0;
+    font-size: 20px;
+  }
+  .ingredients-section-header button {
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    font-size: 15px;
+    border-radius: 3px;
+    /* opacity: 1; */
+  }
+
+  /* .delete-ingredients-message-holder {
+    border: 3px blue solid; 
+  } */
+
+  .delete-ingredients-message { 
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    /* border: solid 2px red; */
+  }
+  .delete-ingredients-button-container {
+    width: 105px;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+  }
+  .delete-ingredients-button-container button {
+    width: 45px; 
+    height: 28px; 
+    font-size: 14px;
+  }
+  .ingredients-list {
+    /* border: 1px red solid; */
+    /* width: 75%; */
+    padding: 5px 5px 0 40px;
+  }
+  .ingredients-info-text {
+    width: 100%;
+    font-size: 18px; 
+    /* border: 1px solid red;  */
+    margin: 0 0 0 -20px;
+    display: flex;
+    justify-content: center;
+  }
+  .ingredients-li-holder {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .ingredients-list li {
+    /* margin-bottom: 6px; */
+    font-size: 19px;
+    /* border: 2px solid red; */
+    width: calc(100% - 42px);
+  }
+  .ingredients-li-edit-button {
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    right: 10px; 
+    /* border: 2px black solid;
+    opacity: 1; */
+  }
+  .ingredients-input-container-holder {
+    width: 100%; 
+  }
+  .ingredients-input-container {
+    width: 90%;
+    padding-top: 8px;
+  }
+  .ingredients-input,
+  .ingredients-edit-input {
+    height: 16px;
+    padding: 7px 28px 7px 10px;
+    font-size: 17px;
+  }
+  .ingredients-input::placeholder {
+    font-size: 15px;
+  }
+  .ingredients-input-add-button {
+    margin-left: -27px; 
+    width: 22px; 
+    height: 22px;  
+    font-size: 24px;
+  }
+  .ingredients-input-done-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 9px;
+  }
+  .ingredients-edit-input-cancel-button {
+    margin-left: 8px;
+    width: 27px;
+    height: 27px;
+    font-size: 20px; 
+  }
+}
