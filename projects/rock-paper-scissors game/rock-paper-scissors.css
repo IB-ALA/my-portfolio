@@ -1,0 +1,206 @@
+body {
+  background-image: linear-gradient(rgba(146, 146, 146, 0.842), rgba(56, 56, 56, 0.788)), url(images/rock-paper-scissors-image.png);
+  color: white;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: fit-content;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+header {
+  position: absolute;
+  top: -10px;
+}
+.game-name {
+  border-bottom: 2px rgba(83, 83, 83, 0.918) solid;
+  padding: 0 10px 15px 10px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+}
+
+.moves-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  width: 484px;
+}
+.play-move-icon {
+  height: 50px;
+  transition: 0.2s;
+}
+.move-button {
+  background-color: transparent;
+  border: 3px rgba(196, 196, 196, 0.815) solid;
+  width: 130px;
+  height: 130px;
+  border-radius: 70px;
+  cursor: pointer;
+  box-shadow: inset 0px 2px 20px 10px rgb(105, 105, 105);
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.move-button:active {
+  transform: translateY(-15px);
+}
+
+.outcome-container {
+  padding: 10px 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.make-move-text {
+  margin: 0;
+  font-family: cursive;
+  font-size: 30px;
+  color: rgb(202, 202, 202);
+  text-shadow: 4px 4px 5px rgba(250, 250, 250, 0.349);
+}
+
+.outcome-moves-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 500px;
+}
+.outcome-moves-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+}
+
+.result{
+  margin-bottom: 0px;
+  font-size: 35px;
+  text-shadow: 5px 5px 6px black;
+  font-weight: bold;
+  font-family: cursive;
+}
+.player-move-icon, 
+.computer-move-icon {
+  margin-top: -10px;
+  height: 55px
+}
+
+.scores-container {
+  border-top: 2px rgba(0, 0, 0, 0.57) solid;
+  border-bottom: 2px rgba(0, 0, 0, 0.7) solid;
+  display: flex;
+  padding: 10px 80px;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 444px;
+} 
+.scores-container p {
+  margin: 0;
+  padding: 10px;
+  font-size: 22px;
+  font-family: cursive;
+  text-shadow: 5px 5px 4px black;
+}
+
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.control-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.reset-score-button,
+.auto-play-button {
+  font-size: 18px;
+  padding: 12px 17px;
+  border: none;
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+  transition: 0.15s
+}
+
+@media (min-width = 401px) {
+  .reset-score-button:hover,
+  .auto-play-button:hover {
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.322);
+  }
+
+  .move-button:hover {
+    backdrop-filter: blur(2px);
+    .play-move-icon {
+      height: 65px;
+    }
+  }
+}
+
+.consent-message-holder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(37, 37, 37, 0.608);
+  backdrop-filter: blur(1px);
+}
+
+.consent-message {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(46, 46, 46);
+  backdrop-filter: blur(20px);
+}
+.consent-message p {
+  margin: 0 0 20px 0;
+  font-size: 19px;
+  text-align: center;
+}
+.consent-message-buttons {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.yes-button, 
+.no-button {
+  color: rgba(0, 0, 0, 0.842);
+  background: rgba(153, 153, 153, 0.293);
+  border: rgba(83, 83, 83, 0.582) 2px solid;
+  font-size: 16px;
+  border-radius: 2px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.yes-button:hover, 
+.no-button:hover {
+  background-color: rgba(83, 83, 83, 0.596);
+}
+.yes-button:active, 
+.no-button:active {
+  background-color: rgba(83, 83, 83, 0.815);
+}

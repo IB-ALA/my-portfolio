@@ -1,0 +1,112 @@
+
+
+
+/* APP DOESN'T LOOG GOOD ON MOBILE. */
+/* FIX IT */
+@media screen and (max-width: 400px) {
+
+  header {
+    position: fixed;
+    top: -10px;
+  }
+
+  .game-name {
+    font-size: 30px !important;
+  }
+
+  main {
+    width: 350px;
+    margin-top: -140px;
+  }
+
+  .moves-container {
+    padding: 0;
+    width: 330px;
+    margin: 0 auto;
+  }
+
+  .move-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .outcome-container {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .make-move-text {
+    margin: 0;
+    font-size: 25px;
+  }
+  .outcome-moves-container {
+    margin-top: 10px;
+    width: 350px;
+  }
+
+  .outcome-moves-container div {
+    width: 110px;
+  }
+  .outcome-moves-container div:nth-child(2) {
+    width: 150px;
+  }
+
+  .result{
+    font-size: 30px;
+    margin-bottom: -50px;
+  }
+
+  .player-move-icon, 
+  .computer-move-icon {
+    margin: 0;
+    height: 35px;
+  }
+
+  .scores-container {
+    padding: 10px 0px;
+    margin-left: 3px;
+    max-width: 340px;
+
+    position: fixed;
+    bottom: calc(2% + 55px);
+    width: 100%; 
+  } 
+
+  .scores-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .control-buttons-container {
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    align-self: center;
+  }
+
+  .reset-score-button,
+  .auto-play-button {
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.322);
+  }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+  header {
+    top: 10px;
+  }
+  .game-name {
+    font-size: 42px;
+  }
+}
+
+@media (700px <= width < 900px) {
+  .game-name {
+    font-size: 50px;
+  }
+}
