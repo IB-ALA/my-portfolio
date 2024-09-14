@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'arial', sans-serif;
+}
+
+.front-cover {
+  width: 100%;
+  height: 100vh;
+  min-height: fit-content;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.582)), url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box; 
+  padding: 0 8%;
+}
+
+header {
+  display: flex;
+  height: 12%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(176, 176, 176, 0.329);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.144);
+  border-radius: 3px;
+  margin-top: 4px;
+  transition: .15s;
+}
+.menu-icon:hover {
+  background-color: rgba(255, 255, 255, 0.285);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  transition: .15s;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.713);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  height: 88%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex-basis: 50%;
+}
+.left h1 {
+  color: white;
+  font-size: 70px;
+}
+.left p {
+  color: rgb(201, 201, 201);
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+.left button {
+  background-color: rgba(255, 255, 255, 0.907);
+  color: black;
+  font-size: 14px;
+  padding: 14px 48px;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  transition: transform 0.15s;
+}
+.left button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.right {
+  flex-basis: 46%;
+  text-align: center;
+}
+
+.card {
+  text-align: start;
+  width: 200px;
+  height: 220px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.582)),;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.a {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 0)), url(images/rabbitmeat2.jpg);
+}
+.b {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 0)), url(images/chickenmeat1.jpg);
+}
+.c {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 0)), url(images/cowmeat1.jpg);
+}
+.d {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 0)), url(images/sheetmeat1.jpg);
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 3px 3px 9px 3px #00000036;
+}
+.card h5 {
+  color: white;
+  text-shadow: 0 3px 3px #000000;
+  font-size: 15px;
+}
+.card p {
+  color: rgb(158, 158, 158);
+  text-shadow: 0 3px 3px #3a3a3a;
+}
+
+
+
+
+/* responsive design */
+@media screen and (max-width: 500px) {
+
+  .front-cover {
+    height: 100vh !important;
+  }
+
+  nav {
+    width: fit-content !important;
+  }
+
+  nav a:not(:last-child) {
+    display: none;
+  }
+
+  .left h1 {
+    margin-top: 30px !important;
+    font-size: 35px !important;
+  }
+
+  .right {
+    margin-top: 0 !important;
+  }
+
+
+  .card {
+    width: 100px !important;
+    height: 145px !important;
+  }
+}
+
+@media (max-width:845px) {
+  .front-cover {
+    width: 100%;
+    height: fit-content;
+  }
+  header {
+    padding: 2% 0;
+    height: fit-content;
+  }
+  .logo {
+    width: 35px;
+    height:35px;
+  }
+  nav {
+    width: 55%;
+  }
+  .menu-icon {
+    width: 25px;
+    height:25px;
+    border-radius: 2px;
+    margin-top: 1px;
+  }
+  a {
+    font-size: 13px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .left h1 {
+    margin-top: 130px;
+    font-size: 45px;
+  }
+  .left p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+  .left button {
+    font-size: 14px;
+    padding: 10px 0;
+    width: 130px;
+    border-radius: 20px;
+    margin: 30px 0;
+  }
+  .right {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+  }
+  .card {
+    width: 170px;
+    height: 200px;
+    border-radius: 11px;
+    padding: 8px 12px;
+    margin: 8px;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 3px 3px 9px 3px #00000036;
+  }
+  .card h5 {
+    text-shadow: 0 3px 3px #000000;
+    font-size: 14px;
+  }
+  .card p {
+    margin-top: 5px;
+    font-size: 13px;
+    text-shadow: 0 3px 3px #3a3a3a;
+  }
+}
+
+@media (min-width: 845px) and (max-width: 1000px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  nav {
+    width: 33%;
+  }
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    margin-top: 2px;
+  }
+  a {
+    font-size: 11.5px;
+  }
+  .left h1 {
+    font-size: 50px;
+  }
+  .left p {
+    font-size: 12px;
+    margin-top: 7px;
+    line-height: 17px;
+  }
+  .left button {
+    font-size: 14px;
+    padding: 10px 28px;
+    border-radius: 20px;
+    margin-top: 25px;
+  }
+  .right {
+    flex-basis: 48%;
+    /* margin-left: calc(50% - 49%); */
+    margin-left: 1%;
+  }
+  .card {
+    width: 130px;
+    height: 160px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 2px 2px 9px 2px #00000036;
+  }
+  .card h5 {
+    text-shadow: 0 2px 2px #000000;
+    font-size: 13px;
+  }
+  .card p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-shadow: 0 2px 2px #3a3a3a;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+  nav {
+    width: 35%;
+  }
+  .left h1 {
+    font-size: 60px;
+  }
+  .card {
+    width: 140px;
+    height: 170px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .left h1 {
+    font-size: 70px;
+  }
+  .card {
+    width: 160px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 15px;
+  }
+}
