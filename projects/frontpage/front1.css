@@ -36,6 +36,10 @@ nav {
   width: 25%;
 }
 
+.mobile-navs {
+  display: none;
+}
+
 .menu-icon {
   width: 30px;
   height: 30px;
@@ -154,10 +158,41 @@ a:hover {
 
   nav {
     width: fit-content !important;
+    position: relative;
   }
 
-  nav a:not(:last-child) {
+  nav>a:nth-child(1),
+  nav>a:nth-child(2),
+  nav>a:nth-child(3) {
     display: none;
+  }
+
+  nav>a:nth-child(4):hover + .mobile-navs {
+    display: flex;
+  }
+
+  .mobile-navs {
+    border-radius: .2rem;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    padding: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    background-color: hsl(0, 0%, 93%);
+    gap: .1em;
+    z-index: 99;
+  }
+
+  .mobile-navs a {
+    color: black;
+    font-size: .77rem;
+    text-align: center;
+    padding: 5px 2px;
+  }
+
+  .mobile-navs a:active {
+    background-color: hsl(0, 0%, 90%);
   }
 
   .left h1 {
